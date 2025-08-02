@@ -9,16 +9,39 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List {
+            NavigationLink(destination: {
+                BasicTipView()
+            }, label: {
+                Text("Basic")
+            })
+            
+            NavigationLink(destination: {
+                ActionTipView()
+            }, label: {
+                Text("With Action")
+            })
+            
+            NavigationLink(destination: {
+                ControlledTipView()
+            }, label: {
+                Text("Controlled")
+            })
+            
+            NavigationLink(destination: {
+                CustomAppearanceTipView()
+            }, label: {
+                Text("UI Customization")
+            })
         }
-        .padding()
+        .navigationTitle("Tip Kit Demo")
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 
 #Preview {
-    ContentView()
+    NavigationStack {
+        ContentView()
+    }
 }
+
