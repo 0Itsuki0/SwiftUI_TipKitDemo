@@ -20,7 +20,7 @@ Specifically, this demo includes:
     - Enable background interaction
     
     
-For more details, please refer to my blog [SwiftUI: TipKit From Basic To Advance]()
+For more details, please refer to my blog [SwiftUI: TipKit From Basic To Advance](https://medium.com/@itsuki.enjoy/swiftui-tipkit-from-basic-to-advance-c27f0447ee98)
 
 ![](./demo.gif)
 
